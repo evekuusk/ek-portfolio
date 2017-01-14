@@ -27,10 +27,12 @@ class TabsAccordion extends React.Component {
     ));
     return (
       <div className="tabs-accordion">
-        {navBtns}
+        <div className="tab-nav-btns">{navBtns}</div>
         {this.props.tabs[this.state.openTab]}
-        <button type="button" className={this.state.prevBtn ? "prev-tab-btn" : "prev-tab-btn disabled"} onClick={() => this.decrementTab()}>Previous</button>
-        <button type="button" className={this.state.nextBtn ? "next-tab-btn" : "next-tab-btn disabled"} onClick={() => this.incrementTab()}>Next</button>
+        <div className="nav-btns">
+          <button type="button" className={this.state.prevBtn ? "prev-tab-btn" : "prev-tab-btn disabled"} onClick={() => this.decrementTab()}>Previous</button>
+          <button type="button" className={this.state.nextBtn ? "next-tab-btn" : "next-tab-btn disabled"} onClick={() => this.incrementTab()}>Next</button>
+        </div>
       </div>
     )
   }

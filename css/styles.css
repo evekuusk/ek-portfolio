@@ -2532,6 +2532,21 @@ Copyright (c) 2015 Daniel Eden
 /* ===============================
       GENERAL LAYOUT STYLES
 =============================== */
+div.header h1 {
+  text-align: center; }
+
+div.sub-header img.sub-header-icon {
+  margin-right: 0.45rem;
+  height: 2.5rem;
+  width: auto; }
+div.sub-header h2 {
+  display: inline-block;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  vertical-align: top; }
+div.sub-header h5 {
+  margin-top: 0.15rem; }
+
 /* ===============================
   TABS & TABS-ACCORDION STYLES
 =============================== */
@@ -2545,11 +2560,11 @@ div.tabs-accordion {
     flex-wrap: wrap;
     justify-content: center; }
     div.tabs-accordion div.tab-nav-btns button.tab-nav {
-      margin: 0.15rem 0.25rem -0.15rem;
-      padding: 0.25rem 0.65rem 0.65rem;
+      margin: 0.25rem;
+      padding: 0.5rem 0.75rem;
       border: 2px solid #808080;
       outline: none;
-      border-radius: 5px 5px 0 0;
+      border-radius: 5px;
       background: #d6d6d6;
       color: #4d4d4d;
       transition: color 400ms, background 300ms; }
@@ -2558,7 +2573,7 @@ div.tabs-accordion {
         color: #fff; }
       div.tabs-accordion div.tab-nav-btns button.tab-nav.disabled {
         background: #fff;
-        border-bottom: none; }
+        color: #4d4d4d; }
   div.tabs-accordion div.tab {
     background: #fff;
     padding: 1.5rem 2.5rem;
@@ -2569,20 +2584,6 @@ div.tabs-accordion {
 /* ===============================
         RESPONSIVE STYLES
 =============================== */
-@media screen and (max-width: 1300px) {
-  div.tabs-accordion {
-    width: 95%; }
-    div.tabs-accordion div.tab-nav-btns {
-      width: 95%; }
-      div.tabs-accordion div.tab-nav-btns button.tab-nav {
-        margin: 0.15rem 0.25rem;
-        padding: 0.25rem 0.65rem;
-        border-radius: 5px; }
-        div.tabs-accordion div.tab-nav-btns button.tab-nav.disabled {
-          border-bottom: 2px solid #808080; }
-    div.tabs-accordion div.tab {
-      padding: 0.5rem;
-      margin-bottom: 1rem; } }
 @media screen and (max-width: 700px) {
   div.tabs-accordion {
     width: 98%; }
@@ -2648,8 +2649,5 @@ button.disabled {
 /* ===============================
           IMAGE STYLES
 =============================== */
-img.sub-header-icon {
-  height: 1rem;
-  width: auto; }
 
 /*# sourceMappingURL=styles.css.map */

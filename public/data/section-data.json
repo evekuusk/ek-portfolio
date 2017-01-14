@@ -1,0 +1,29 @@
+{
+  "ABOUT": {
+    "story": "Eve started coding a bit and then got a job, the end."
+  },
+  "EXPERIENCE": {
+    "positions": [
+      {
+        "employer": "e=mz2 Inc.",
+        "location": "Burlington, ON",
+        "start": "September 2015",
+        "technology": [
+          ["HTML", 5],
+          ["CSS", 5, ["sass"]],
+          ["JavaScript", 5, ["AngularJS", "React.js", "jQuery"]],
+          ["PHP", 2],
+          ["MySQL", 1]
+        ],
+        "achievements": [
+          "stuff",
+          "other stuff",
+          "also things"
+        ]
+      }
+    ]
+  },
+  "PLAYGROUND": {
+
+  }
+}
